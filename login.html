@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BG Burgers Website">
+    <meta name="keywords" content="Burger, Fries, Drinks, Events Management">
+    <meta name="author" content="Adolf Mathebula">
+
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <title>BG Burgers - Login</title>
+
+    <!--Styles For the Page-->
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.login.css">
+
+</head>
+
+<body class="body">
+
+    <div class="header-container"> <!--header section start-->
+
+    <!--navigation start-->
+
+        <nav class="navbar">
+           <!-- Logo -->
+           <div class="logo">BG BURGERS - LOGIN</div>
+           <!-- Navigation Menu -->
+           <ul class="nav-links">
+             <!-- checkbox hack -->
+             <input type="checkbox" id="checkbox_toggle" />
+             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+             <!-- Navigation Menus -->
+             <div class="menu">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="specials.html">Specials</a>
+               <li><a href="blog.html">Blog</a></li>
+               <li><a href="login.html" >
+                <button class="bt-login">Login</button>
+            </a></li>
+             </div>
+           </ul>
+         </nav>
+       
+        <!--navigation end-->
+
+    </div>
+
+    <div class="spacing"></div>
+   
+    <main>
+
+        <section class="login-section">
+
+            <h1>Login</h1>
+             
+            <form class="form">
+                <label class="form-label">Username</label>
+                <input type="text" name="username" value="" placeholder="username or email..." class="form-input" />
+                <label class="form-label">Password</label>
+                <input type="text" name="passsword" value="" placeholder="password..." class="form-input" />
+                <div class="form-radio">
+                    <input type="radio" class="radio-btn"  name="remember"value="remember" /> <span for="radio-btn" class="form-radio-text">Remember Me</span>
+                </div>
+                <input type="button" value="Login" class="form-submit-btn" />
+            </form>
+            
+            <div class="form-links">
+                <a href="#">Sign Up</a>
+                <a href="#">Forgot Password?</a>
+            </div>
+
+        </section>
+        
+    </main>
+
+</body>
+</html>

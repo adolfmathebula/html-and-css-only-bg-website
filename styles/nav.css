@@ -1,0 +1,115 @@
+
+@import url(style.css);
+
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+   body {
+    width: 100%;
+    background-color: #fff; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+
+
+   /* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #c9a074;
+    color: #fff;
+   }
+
+   .nav-links a {
+    color: #fff;
+    font-weight: 700;
+    font-size: large !important;
+   }
+
+  
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+   }
+
+   .menu li > a:hover {
+    color: #000;
+    transition: 0.2s ease;
+   }
+
+   .menu li {
+    padding: 5px 14px;
+   }
+
+   /* ........................... */
+
+   /*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+   /* APPLYING MEDIA QUERIES */
+   @media (max-width: 768px) {
+   .menu { 
+    display:none;
+    position: absolute;
+    background-color:#c9a074;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+   }
+   .menu li:hover {
+    display: inline-block;
+    background-color: #c9a074;
+    transition: 0.3s ease;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block !important;
+   }
+   .hamburger {
+    display: block;
+   }
+
+ 
+   .bt-login{
+    background-color: #ac865d;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    font-weight: bold;
+}
+
+.bt-login:hover{
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    color: #e48b2c;
+}
+
+   }
+
+   .current{ color: #000 !important}
